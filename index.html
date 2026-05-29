@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacina HPV - Brasil | HPV Vaccine - Brazil</title>
+    <meta name="description" content="Informações sobre vacinação HPV para adolescentes. Information about HPV vaccination for teenagers.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="pt" onclick="switchLanguage('pt')">Português</button>
+        <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')">English</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text" data-i18n="logo">Vacina HPV</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero" data-i18n="nav_home">Início</a></li>
+                <li><a href="#about" data-i18n="nav_about">O que é HPV</a></li>
+                <li><a href="#why" data-i18n="nav_why">Por que vacinar</a></li>
+                <li><a href="#myths" data-i18n="nav_myths">Mitos e Verdades</a></li>
+                <li><a href="#how" data-i18n="nav_how">Como tomar</a></li>
+                <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="hero_title">Essa vacina previne câncer. Sério.</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">E você pode se vacinar de graça, agora.</p>
+                <p class="hero-text" data-i18n="hero_text">O HPV é um vírus tão comum que quase todo mundo pega em algum momento da vida. Mas existe uma vacina que impede isso.</p>
+                <button class="cta-button" data-i18n="hero_cta">Quero saber mais</button>
+            </div>
+            <div class="hero-image">
+                <svg viewBox="0 0 200 200" class="hero-illustration">
+                    <circle cx="100" cy="70" r="35" fill="#00A859"/>
+                    <rect x="70" y="110" width="60" height="50" fill="#FFDD00" rx="5"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 data-i18n="about_title">HPV: o que é isso?</h2>
+            <p class="section-intro" data-i18n="about_intro">HPV significa Papilomavírus Humano. É um vírus transmitido pelo contato íntimo com a pele.</p>
+            <div class="risks-grid">
+                <div class="risk-card">
+                    <p data-i18n="risk_1">Câncer de colo do útero</p>
+                </div>
+                <div class="risk-card">
+                    <p data-i18n="risk_2">Câncer de garganta</p>
+                </div>
+                <div class="risk-card">
+                    <p data-i18n="risk_3">Câncer de ânus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why" class="section why">
+        <div class="container">
+            <h2 data-i18n="why_title">Por que se vacinar agora?</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-stat="88">0</div>
+                    <p class="stat-label">% redução em infecções</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="myths" class="section myths">
+        <div class="container">
+            <h2 data-i18n="myths_title">Mitos vs. Verdades</h2>
+            <div class="myth-cards">
+                <div class="myth-card">
+                    <div class="myth-front" onclick="flipCard(this)">
+                        <p data-i18n="myth_1_front">A vacina dói muito.</p>
+                    </div>
+                    <div class="myth-back" onclick="flipCard(this)">
+                        <p data-i18n="myth_1_back">Os efeitos são leves e passageiros.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-i18n="cta_heading">Pronto para se vacinar?</h2>
+            <button class="cta-button large" data-i18n="cta_button">Encontrar posto de saúde</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer_last_review">Última revisão: Maio 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
