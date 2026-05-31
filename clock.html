@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="clock-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="clock-wrapper">
+            <div class="header">
+                <h1>🌍 World Clock</h1>
+                <p class="subtitle">Current time across the globe</p>
+            </div>
+
+            <div class="local-time">
+                <div class="local-clock">
+                    <div class="time-display" id="localTime">00:00:00</div>
+                    <div class="date-display" id="localDate">Monday, January 1, 2024</div>
+                    <div class="timezone-display" id="localTimezone">Local Time</div>
+                </div>
+            </div>
+
+            <div class="settings">
+                <label for="timeFormat">Time Format:</label>
+                <select id="timeFormat">
+                    <option value="24">24-Hour</option>
+                    <option value="12">12-Hour (AM/PM)</option>
+                </select>
+            </div>
+
+            <div class="timezones-grid" id="timezonesGrid">
+                <!-- Timezone clocks will be inserted here -->
+            </div>
+
+            <div class="add-timezone">
+                <h3>Add Custom Timezone</h3>
+                <div class="add-timezone-form">
+                    <input type="text" id="timezoneName" placeholder="e.g., Tokyo, New York, London">
+                    <input type="text" id="timezoneOffset" placeholder="e.g., UTC+9, UTC-5, UTC+0">
+                    <button id="addTimezoneBtn">Add Timezone</button>
+                </div>
+                <div class="custom-timezones" id="customTimezones"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="clock-script.js"></script>
+</body>
+</html>
